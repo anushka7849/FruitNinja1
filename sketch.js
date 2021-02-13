@@ -1,5 +1,5 @@
 var sword,swordImage;
-var fruit,fruit1,fruit2,fruit3,fruit4;
+var fruit,fruit1,fruit2,fruit3,fruit4,fruit5;
 var monster,alien1,alien2;
 var gameOver,gameOverImage;
 var PLAY=1;
@@ -15,6 +15,7 @@ function preload(){
   fruit2=loadImage("fruit2.png");
   fruit3=loadImage("fruit3.png");
   fruit4=loadImage("fruit4.png");
+  fruit5=loadImage("litchi.tiff");
   
   alien1=loadImage("alien1.png");
   alien2=loadImage("alien2.png");
@@ -76,7 +77,7 @@ function fruits(){
   if(World.frameCount%80===0){
     fruit=createSprite(400,200,20,20);
     fruit.scale=0.5;
-    r=Math.round(random(1,4));
+    r=Math.round(random(1,5));
     if(r==1){
       fruit.addImage("fruit1",fruit1);
     }
@@ -89,6 +90,9 @@ function fruits(){
     else if(r==4){
       fruit.addImage("fruit4",fruit4);
     }
+   else if(r==5){
+    fruit.addImage("fruit5",fruit5);
+   }
     fruit.y=Math.round(random(50,500));
     fruit.velocityX=-6; 
     fruit.setLifeTime=100;
