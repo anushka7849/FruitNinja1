@@ -15,7 +15,7 @@ function preload(){
   fruit2=loadImage("fruit2.png");
   fruit3=loadImage("fruit3.png");
   fruit4=loadImage("fruit4.png");
-  fruit5=loadImage("litchi.tiff");
+  fruit5=loadImage("cherry.png");
   
   alien1=loadImage("alien1.png");
   alien2=loadImage("alien2.png");
